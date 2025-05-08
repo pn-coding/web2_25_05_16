@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* .first_bro+h3{
+            color: red;
+        } */
+        /* =>인접 형제 선택자
+        =>기준 선택자 바로 뒤에있는 형제 엘리먼트를 선택함  */
+
+        .first_bro ~ h2{
+            color: blue;
+        }
+        /* =>형제 선택자 
+        =>기준 선택자 뒤에 있는 형제 엘리먼트 선택  */
+
+        .first_bro ~ .last_bro{
+            color: salmon;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h2 class="first_bro">기준 엘리먼트</h2>
+    <h3>기준 엘리먼트 뒤 형제</h3>
+    <h2>형제 엘리먼트</h2>
+    <h2>형제 엘리먼트</h2>
+    <h2 class="last_bro">형제 엘리먼트</h2>
+
+</body>
+</html>

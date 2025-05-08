@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제2</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        input{
+            display: none;
+        }
+
+        .btn_wrap{
+            margin: 100px auto;
+            width: 150px;
+            height: 60px;
+            background-color: lightgray;
+            border-radius: 50px;
+            position: relative;
+        }
+
+        .circle{
+            width: 55px;
+            height: 55px;
+            background-color: white;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            top: 2.5px;
+            left: 2.5px;
+            cursor: pointer;
+            transition-duration: 0.5s;
+        }
+
+        #toggle:checked~.btn_wrap{
+            background-color: rgb(2, 209, 30);
+        }
+
+        #toggle:checked~.btn_wrap .circle{
+            left: 92.5px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <input type="checkbox" id="toggle">
+    <div class="btn_wrap">
+        <label for="toggle" class="circle"></label>
+    </div>
+
+</body>
+</html>

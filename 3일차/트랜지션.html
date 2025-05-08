@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: salmon;
+            transition-duration: 1s;
+            /* =>엘리먼트에 트랜지션을 적용하면 hover시 
+            마우스 올렸을때, 내렸을때 둘다 적용됨 */
+            transition-timing-function: cubic-bezier(0, 0.66, 0.9, 0);
+            /* =>가속도 적용  */
+        }
+        
+        .box:hover{
+            width: 500px;
+            height: 500px;
+            background-color: teal;
+            /* transition-duration: 1s; */
+            /* =>엘리먼트가 변화하는 시간을 추가함
+            =>단위는 s 단위 */
+
+            /* transition-delay: 3s;
+            =>딜레이 적용 */
+
+            transition-property: width;
+            /* =>트랜지션을 적용하고자 하는 속성을 지정 할 수 있음 */
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="box"></div>
+
+</body>
+</html>
