@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>문제2</title>
+    <title>Document</title>
 
     <style>
 
@@ -13,38 +13,38 @@
             box-sizing: border-box;
         }
 
-        input{
-            display: none;
-        }
-
-        .btn_wrap{
-            margin: 100px auto;
+        .toggle_wrap{
             width: 150px;
-            height: 60px;
-            background-color: lightgray;
+            height: 50px;
+            margin: 100px auto;
+            background-color: #dbdbdb;
             border-radius: 50px;
             position: relative;
         }
 
+        input{
+            display: none;
+        }
+
         .circle{
-            width: 55px;
-            height: 55px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
             background-color: white;
             display: block;
-            border-radius: 50%;
             position: absolute;
-            top: 2.5px;
-            left: 2.5px;
+            top: 5px;
+            left: 5px;
+            transition-duration: 0.2s;
             cursor: pointer;
-            transition-duration: 0.5s;
         }
 
-        #toggle:checked~.btn_wrap{
-            background-color: rgb(2, 209, 30);
+        #toggle:checked ~ .toggle_wrap .circle{
+            left: 105px;
         }
 
-        #toggle:checked~.btn_wrap .circle{
-            left: 92.5px;
+        #toggle:checked ~ .toggle_wrap{
+            background-color: chartreuse;
         }
 
     </style>
@@ -53,9 +53,11 @@
 <body>
     
     <input type="checkbox" id="toggle">
-    <div class="btn_wrap">
+    <div class="toggle_wrap">
         <label for="toggle" class="circle"></label>
     </div>
+
+    
 
 </body>
 </html>
