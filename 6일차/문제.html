@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* *애니메이션
+        =>특정 행동 없이 반복적으로 자동으로 움직임 
+        =>animation 속성으로 사용됨 */
+
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: teal;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: box_ani 2s alternate infinite;
+        }
+
+        @keyframes box_ani{
+            0%{
+                top: 0;
+                left: 0;
+            }
+
+            50%{
+                top:300px;
+                left:300px;
+                background-color: salmon;
+                border-radius: 50%;
+                transform: rotate(360deg);
+            }
+
+            100%{
+                transform: skew(45deg);
+                top: 0;
+                left: 600px;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+
+
+    
+    *문제
+    1.엘리먼트가 지그재그로 움직임
+    360도 회전 , 배경색 변경, 둥글기, 기울기 
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: tan;
+            transition-duration:1s ;
+        }
+
+        .box:hover{
+            /* transform: rotateZ(360deg);
+            transform: scale(0.5); */
+            transform: rotateZ(360deg) scale(0.5) skewX(45deg);
+            /* =>트랜스폼 여러 값을 적용할땐 띄어쓰기 구분하여 한줄로 작성해줄것 */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- *문제
+    엘리먼트 제작 후 
+    엘리먼트에 마우스를 올리면 
+    360도 회전 되면서 0.5배 작아지게 만들기 -->
+
+    <div class="box"></div>
+
+</body>
+</html>

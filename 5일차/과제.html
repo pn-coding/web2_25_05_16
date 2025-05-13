@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrap{
+            width: 500px;
+            height: 500px;
+            margin: 100px auto;
+            background-color: lightgray;
+            position: relative;
+        }
+
+        .line{
+            background-color: crimson;
+            position: absolute;
+            transition-duration: 1s;
+        }
+
+        .top{
+            top: 0;
+            left: 0;
+        }
+
+        .right{
+            top: 0;
+            right: 0;
+        }
+
+        .bottom{
+            bottom: 0;
+            right: 0;
+        }
+
+        .left{
+            bottom: 0;
+            left: 0;
+        }
+
+        .top,
+        .bottom{
+            width: 0%;
+            height: 20px;
+        }
+
+        .right,
+        .left{
+            width: 20px;
+            height: 0%;
+        }
+
+        .wrap:hover .top{
+            width: 100%;
+        }
+
+        .wrap:hover .right{
+            height: 100%;
+            transition-delay: 1s;
+        }
+
+        .wrap:hover .bottom{
+            width: 100%;
+            transition-delay: 2s;
+        }
+
+        .wrap:hover .left{
+            height: 100%;
+            transition-delay: 3s;
+        }
+
+        .title{
+            font-size: 50px;
+            text-align: center;
+            line-height: 500px;
+            opacity: 0;
+            transition-duration: 1s;
+        }
+
+        .wrap:hover .title{
+            opacity: 1;
+            transition-delay: 4s;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="wrap">
+
+        <div class="line top"></div>
+        <div class="line right"></div>
+        <div class="line bottom"></div>
+        <div class="line left"></div>
+
+        <div class="title">WEB</div>
+
+    </div>
+
+
+</body>
+</html>

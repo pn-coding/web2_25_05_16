@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: gold;
+            /* transform: translateY(100px); */
+            /* =>엘리먼트를 이동할때 사용, x, y 축 사용가능 */
+            /* transform: translate(100px, 100px);
+            =>translate만 사용할땐 xy축 동시에 값 적용 가능 */
+            margin: 100px auto;
+
+            /* transform: scale(2); */
+            /* =>엘리먼트의 크기를 조절할수 있음
+            =>배수 단위 1이 원래 크기 2는 두배 */
+            transition-duration: 1s;
+        }
+
+        .box:hover{
+            /* transform: rotateZ(360deg); */
+            /* =>엘리먼트 회전
+            =>단위는 deg 
+            =>z축이 일반적인 회전 */
+
+            transform: skewY(45deg);
+            /* =>엘리먼트 기울기
+            =>단위는 deg */
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- *transform -->
+    <!-- =>변형  -->
+    <!-- =>이동, 회전, 크기, 기울기  -->
+
+    <div class="box"></div>
+    
+</body>
+</html>

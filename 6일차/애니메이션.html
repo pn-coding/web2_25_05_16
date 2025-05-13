@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* *애니메이션
+        =>특정 행동 없이 반복적으로 자동으로 움직임 
+        =>animation 속성으로 사용됨 */
+
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: teal;
+            animation-name: box_ani;
+            /* =>애니메이션 이름 지정 */
+
+            animation-duration: 1s;
+            /* =>지속 시간 지정 */
+
+            animation-iteration-count: infinite;
+            /* =>반복 횟수, infinite로 무제한 가능 */
+
+            animation-direction: alternate;
+            /* =>방향 일반적으로 alternate 많이 사용 */
+
+            /* animation-delay: 2s; */
+            /* =>애니메이션 딜레이  */
+
+            animation-timing-function: ease;
+            /* =>가속도 지정 */
+
+            animation-fill-mode: forwards;
+            /* =>마지막 모션에서 멈춤  */
+
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        @keyframes box_ani{
+            0%{
+                top: 0;
+                left: 0;
+            }
+
+            10%{
+                width: 500px;
+                height: 100px;
+            }
+
+            50%{
+                background-color: gold;
+            }
+
+            100%{
+                top: 300px;
+                left: 300px;
+            }
+        }
+        
+
+    </style>
+
+</head>
+<body>
+
+    <div class="box"></div>
+
+</body>
+</html>
