@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            height: 300vh;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section{
+            height: 800px;
+            background-color: lightgray;
+        }
+
+        video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* =>영상(또는 이미지)비율이 맞지 않을때 배경 이미지 cover처럼 가득채워줌
+            =>조금 넘쳐나서 안보이는 부분이 발생 할 수 있음 */
+        }
+    
+    </style>
+
+</head>
+<body>
+
+    <section>
+        <video src="video/video.mp4" autoplay muted loop></video>
+    </section>
+
+
+    
+    
+</body>
+</html>
