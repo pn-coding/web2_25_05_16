@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .con_wrap{
+            width: 600px;
+            height: 500px;
+            border: 5px solid black;
+            display: flex;
+            /* =>정렬
+            =>부모에게 적용해야 자식 엘리먼트가 변경됨 */
+
+            /* justify-content: flex-start; */
+            /* =>수평 기준 왼쪽으로 정렬 */
+            
+            /* justify-content: flex-end; */
+            /* =>수평 기준 오른쪽으로 정렬 */
+
+            /* justify-content: center;
+            =>수평기준 엘리먼트를 가운데 정렬함 */
+
+            /* justify-content: space-between; */
+            /* =>수평기준 끝 부분 엘리먼트가 붙은상태에서 안에 있는 엘리먼트가
+            개수에 맞춰 알아서 간격을 나눠 가짐 */
+
+            /* justify-content: space-around;
+            =>한 엘리먼트당 양옆 간격을 동등하게 나눠 가짐 */
+
+            /* justify-content: space-evenly;
+            =>모든 엘리먼트가 동등한 간격을 나눠 가짐 */
+
+            /* align-items: flex-start;
+            =>수직 기준 상단에 정렬됨 */
+
+            /* align-items: flex-end;
+            =>수직 기준 하단에 정렬됨 */
+
+            /* align-items: center;
+            =>수직 기준 가운데 정렬됨 */
+
+            /* flex-direction: column; */
+            /* =>수직 기준으로 축을 변경 */
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        .con{
+            width: 100px;
+            height: 100px;
+            border: 3px solid red;
+            font-size: 30px;
+            background-color: lightsalmon;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="con_wrap">
+        <div class="con">1</div>
+        <div class="con">2</div>
+        <div class="con">3</div>
+        <div class="con">4</div>
+    </div>
+    
+</body>
+</html>
