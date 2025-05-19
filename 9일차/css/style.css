@@ -160,3 +160,66 @@ header a{
     margin-top: 10px;
     opacity: 0.7;
 }
+
+/* section_2 end */
+
+.section_3{
+    height: 800px;
+    /* background-image: url(http://picogram.co.kr/images/main/section02_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    /* *배경축약
+    =>background: color url() 반복 위치 / 크기; */
+    background: url(http://picogram.co.kr/images/main/section02_background.jpg) no-repeat center / cover;
+}
+
+.section_3 a{
+    color: #fff;
+}
+
+.title_wrap_3{
+    text-align: center;
+}
+
+.title_wrap_3 h4{
+    font-size: 22px;
+}
+
+.title_wrap_3 img{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.title_wrap_3 p{
+    font-size: 17px;
+    margin: 40px 0;
+}
+
+.con_wrap_3{
+    width: 1260px;
+    height: 280px;
+    margin: 0 auto;
+}
+
+.con_3{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+    margin-right: -35px;
+}
+
+.con_3 img{
+    width: 70px;
+}
+
+.con_title_3{
+    font-size: 22px;
+    margin-top: 20px;
+}
