@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+header{
+    padding: 30px 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo{
+    font-size: 26px;
+}
+
+.side_menu{
+    display: flex;
+    align-items: center;
+}
+
+.lan_wrap{
+    display: flex;
+}
+
+.menu_btn{
+    margin-left: 40px;
+    font-size: 30px;
+}
+
+.section_1{
+    height: 100vh;
+    background-color: lightgray;
+    position: relative;
+}
+
+.title_1{
+    position: absolute;
+    bottom: 150px;
+    left: 250px;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.section_2{
+    display: flex;
+}
+
+.container_2{
+    width: 50%;
+    height: 100vh;
+}
+
+.container_2:nth-child(1){
+    padding: 200px 250px;
+}
+
+.container_2:nth-child(2){
+    background: url(https://bep.co.kr/resources/images/main_sec2_05.jpeg) no-repeat center / cover;
+}
+
+.section_3{
+    padding: 150px 0 150px 250px;
+}
+
+.title_wrap_3{
+    width: 1420px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.con_wrap_3{
+    width: 1600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con_3{
+    width: 520px;
+}
+

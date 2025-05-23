@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section{
+            height: 800px;
+            background-color: lightgray;
+            padding: 250px 250px;
+        }
+
+        .title{
+            font-size: 80px;
+        }
+
+        section p{
+            opacity: 0.7;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width:1400px) {
+            section{
+                padding: 250px 100px;
+            }
+
+            .title{
+                font-size: 60px;
+            }
+
+            section p{
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            section{
+                height: 500px;
+                padding: 200px 20px;
+            }
+
+            .title{
+                font-size: 36px;
+            }
+
+            section p{
+                font-size: 14px;
+                margin-top: 5px;
+            }
+        }
+
+        .con_wrap{
+            width: 1400px;
+            margin: 150px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .con{
+            width: 31%;
+            height: 500px;
+            background-color: lightgray;
+        }
+
+        @media screen and (max-width:768px) {
+            
+            .con_wrap{
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .con{
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <section>
+        <h3 class="title">Section title</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur <br>
+            adipisicing elit.
+        </p>
+    </section>
+
+    <div class="con_wrap">
+        <div class="con"></div>
+        <div class="con"></div>
+        <div class="con"></div>
+    </div>
+    
+</body>
+</html>

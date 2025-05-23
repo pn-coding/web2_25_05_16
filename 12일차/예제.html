@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .con_wrap{
+            width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .con{
+            width: 32%;
+        }
+
+        .img_wrap{
+            height: 500px;
+            background-color: lightgray;
+            margin-bottom: 20px;
+        }
+
+        .con h3{
+            font-size: 20px;
+        }
+
+        .con p{
+            color: #808080;
+        }
+
+        /* *중단점(break point)
+        =>반응형 작업시 변경되는 사이즈  */
+
+
+        @media screen and (max-width:1400px) {
+            .con_wrap{
+                width: 760px;
+            }
+
+        }
+
+        @media screen and (max-width: 768px) {
+            .con_wrap{
+                width: 95%;
+                display: block;
+            }
+
+            .con{
+                width: 100%;
+                margin-bottom: 50px;
+            }
+
+            .img_wrap{
+                height: 400px;
+            }
+            
+            .con h3{
+                font-size: 16px;
+            }
+
+            .con p{
+                display: none;
+            }
+        }
+        
+
+    </style>
+
+</head>
+<body>
+
+    <div class="con_wrap">
+
+        <div class="con">
+            <div class="img_wrap"></div>
+            <h3>contents title</h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+
+        <div class="con">
+            <div class="img_wrap"></div>
+            <h3>contents title</h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+
+        <div class="con">
+            <div class="img_wrap"></div>
+            <h3>contents title</h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
